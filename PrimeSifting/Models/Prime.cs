@@ -4,13 +4,13 @@ namespace Numbers.Models
 {
   public class Prime
   {
-    public int Description { get; set; }
+    public int UserInput { get; set; }
 
     private static List<Prime> _instances = new List<Prime> {};
 
-    public Prime(int description)
+    public Prime(int userInput)
     {
-      Description = description;
+      UserInput = userInput;
       _instances.Add(this);
     }
 
