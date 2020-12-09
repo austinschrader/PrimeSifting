@@ -1,0 +1,33 @@
+Find Prime numbers from 1-100:
+
+He took 1, 2, 3, 4, 5, 6, 7, 8, 9, 10... (let i;)
+    // Outer Loop
+    (For each i)
+      // Inner Loop
+      (for each i, take i and divide it into 1-100...j)
+        if j % i == 0
+      
+...means j <= i
+
+Example:
+
+i = 2
+j = 10
+
+if 10 % 2 == 0, then we know that 10 is divible by 2
+
+else
+  array.push(j)
+
+
+// PROMPT
+  Prime Sifting
+Given a number, write a method that returns all of the prime numbers less than that number.
+
+This is a tricky problem and you should use the Sieve of Eratosthenes to solve it. Here's how the Sieve of Eratosthenes works to find a number up to a given number:
+
+Create a list of numbers from 2 through n: 2, 3, 4, ..., number.
+Initially, let prime equal 2, the first prime number.
+Starting from prime, remove all multiples of prime from the list.
+Increment prime by 1.
+When you reach number, all the remaining numbers in the list are primes.
