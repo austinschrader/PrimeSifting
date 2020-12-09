@@ -1,20 +1,20 @@
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace Numbers.Models
 {
-  public class Item
+  public class Prime
   {
-    public string Description { get; set; }
+    public int Description { get; set; }
 
-    private static List<Item> _instances = new List<Item> {};
+    private static List<Prime> _instances = new List<Prime> {};
 
-    public Item(string description)
+    public Prime(int description)
     {
       Description = description;
       _instances.Add(this);
     }
 
-    public static List<Item> GetAll()
+    public static List<Prime> GetAll()
     {
       return _instances;
     }

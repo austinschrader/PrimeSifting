@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace ToDoList
+namespace Numbers
 {
-  public class Program
+  public class Programs
   {
     static void Main()
     {

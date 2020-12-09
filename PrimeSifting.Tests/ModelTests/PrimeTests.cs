@@ -1,24 +1,24 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using ToDoList.Models;
+using Numbers.Models;
 using System;
 
-namespace ToDoList.Tests
+namespace Numbers.Tests
 {
   [TestClass]
-  public class ItemTests : IDisposable
+  public class PrimeTests : IDisposable
   {
 
     public void Dispose()
     {
-      Item.ClearAll();
+      Prime.ClearAll();
     }
 
     [TestMethod]
     public void GetNumber_ReturnsNumber_Integer()
     {
-      Item newItem = new Item(15);
-      Assert.AreEqual(typeof(Item), newItem.GetType());
+      Prime newPrime = new Prime(15);
+      Assert.AreEqual(typeof(Prime), newPrime.GetType());
     }
 
     // [TestMethod]
@@ -26,10 +26,10 @@ namespace ToDoList.Tests
     // {
     //   // Arrange
     //   string description = "Walk the dog.";
-    //   Item newItem = new Item(description);
+    //   Prime newPrime = new Prime(description);
 
     //   // Act
-    //   string result = newItem.Description;
+    //   string result = newPrime.Description;
 
     //   // Assert
     //   Assert.AreEqual(description, result);
@@ -40,42 +40,42 @@ namespace ToDoList.Tests
     // {
     //   // Arrange
     //   string description = "Walk the dog.";
-    //   Item newItem = new Item(description);
+    //   Prime newPrime = new Prime(description);
 
     //   // Act
     //   string updatedDescription = "Do the dishes";
-    //   newItem.Description = updatedDescription;
-    //   string result = newItem.Description;
+    //   newPrime.Description = updatedDescription;
+    //   string result = newPrime.Description;
 
     //   // Assert
     //   Assert.AreEqual(updatedDescription, result);
     // }
 
     // [TestMethod]
-    // public void GetAll_ReturnsEmptyList_ItemList()
+    // public void GetAll_ReturnsEmptyList_PrimeList()
     // {
     //   // Arrange
-    //   List<Item> newList = new List<Item> { };
+    //   List<Prime> newList = new List<Prime> { };
 
     //   // Act
-    //   List<Item> result = Item.GetAll();
+    //   List<Prime> result = Prime.GetAll();
 
     //   // Assert
     //   CollectionAssert.AreEqual(newList, result);
     // }
 
     // [TestMethod]
-    // public void GetAll_ReturnItems_ItemList()
+    // public void GetAll_ReturnPrimes_PrimeList()
     // {
     //   // Arrange
     //   string description01 = "Walk the dog";
     //   string description02 = "Wash the dishes";
-    //   Item newItem1 = new Item(description01);
-    //   Item newItem2 = new Item(description02);
-    //   List<Item> newList = new List<Item> { newItem1, newItem2 };
+    //   Prime newPrime1 = new Prime(description01);
+    //   Prime newPrime2 = new Prime(description02);
+    //   List<Prime> newList = new List<Prime> { newPrime1, newPrime2 };
 
     //   // Act
-    //   List<Item> result = Item.GetAll();
+    //   List<Prime> result = Prime.GetAll();
 
     //   // Assert
     //   CollectionAssert.AreEqual(newList, result);
