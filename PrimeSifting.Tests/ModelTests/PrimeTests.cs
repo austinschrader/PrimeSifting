@@ -36,10 +36,12 @@ namespace Numbers.Tests
       Prime testPrime = new Prime(userInput);
 
       // Act
+      int result = testPrime.CreateArray();
 
       // Assert
-      Assert.AreEqual(10, testPrime.CreateArray());
-      Assert.AreEqual(new)
+      Assert.AreEqual(userInput, result);
+
+      // Assert.AreEqual(10, testPrime.CreateArray());
 
     }   
 
