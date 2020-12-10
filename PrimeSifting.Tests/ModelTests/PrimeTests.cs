@@ -32,18 +32,36 @@ namespace Numbers.Tests
     public void CreateArray_ReturnsArray_Array()
     {
       // Arrange
-      int userInput = 10;
+      int userInput = 5;
+      List<int> hardCodedResult = new List<int> {2,3, 4, 5};
+      
+      Console.WriteLine("This is hard code: ");
+      foreach(int item in hardCodedResult)
+      {
+        Console.WriteLine(item);
+      }
+
+      
       Prime testPrime = new Prime(userInput);
 
       // Act
-      int result = testPrime.CreateArray();
+      List<int> result = testPrime.CreateArray();
+
+      Console.WriteLine("This is result: ");
+      foreach(int item in result)
+      {
+        Console.WriteLine(item);
+      }
 
       // Assert
-      Assert.AreEqual(userInput, result);
+      CollectionAssert.AreEqual(hardCodedResult, result);
+    }
 
-      // Assert.AreEqual(10, testPrime.CreateArray());
-
-    }   
 
   }
 }
+
+
+
+      // Console.WriteLine("Here is our userInput: " + userInput);
+      // Assert.AreEqual(10, testPrime.CreateArray());

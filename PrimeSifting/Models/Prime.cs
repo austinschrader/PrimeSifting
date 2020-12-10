@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace Numbers.Models
 {
@@ -22,6 +23,17 @@ namespace Numbers.Models
     public static void ClearAll()
     {
       _instances.Clear();
+    }
+
+    public List<int> CreateArray()
+    {
+      List<int> arrayNums = new List<int> { };
+      for (int num = 2; num <= UserInput; num++)
+      {
+        arrayNums.Add(num);
+      }
+
+      return arrayNums;
     }
 
   }
